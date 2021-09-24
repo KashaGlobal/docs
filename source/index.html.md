@@ -71,9 +71,9 @@ Kittn expects for the API key to be included in all API requests to the server i
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
 
-# Kittens
+# Customers
 
-## Get All Kittens
+## Get All customers
 
 ```ruby
 require 'kittn'
@@ -126,7 +126,7 @@ This endpoint retrieves all kittens.
 
 ### HTTP Request
 
-`GET http://example.com/api/kittens`
+`GET http://customers.kasha.co.ke/api/get`
 
 ### Query Parameters
 
@@ -243,3 +243,16 @@ Parameter | Description
 --------- | -----------
 ID | The ID of the kitten to delete
 
+# Customer consents
+
+
+# Customer loyalty
+
+
+# SMS
+
+# Jazaduka
+
+# USSD
+
+# Woocommerce
