@@ -12,8 +12,8 @@ Additionally, the table contains the names of the target columns in the data_war
 
 | **source system for the ETL** | **PHP ETL available** | **Python ETL available**  | **reporting source**  | **SQL tables**
 |-------------------------------|-----------------------|---------------------------|-----------------------|----------------|
-| Woocommerce orders      | TRUE | TRUE | PHP    | <html><body><ul><li>PHP</li><ul><li>KASHA_DWH.woocommerce_orders</li><li>KASHA_DWH.woocommerce_order_line_items</li><li>KASHA_DWH.woocommerce_order_shipings</li><li>KASHA_DWH.woocommerce_order_refunds</li><li>KASHA_DWH.woocommerce_order_fees</li><li>KASHA_DWH.woocommerce_product_categories</li></ul><li>Python</li><ul><li>KASHA_DWH.python_woocommerce_orders</li><li>KASHA_DWH.python_woocommerce_order_meta_data</li><li>KASHA_DWH.python_woocommerce_order_line_items</li><li>KASHA_DWH.python_woocommerce_order_shiping_lines</li><li>KASHA_DWH.python_woocommerce_order_fee_lines</li><li>KASHA_DWH.python_woocommerce_product_categories</li></ul></ul></body></html> |
-| Tradegecko orders       | TRUE | TRUE | Python | <html><body><ul><li>PHP</li><ul><li>KASHA_DWH.tradegecko_orders</li><li>KASHA_DWH.tradegecko_order_line_items</li></ul><li>Python</li><ul><li>KASHA_DWH.new_tradegecko_orders</li><li>KASHA_DWH.new_tradegecko_order_line_items</li></ul></ul></body></html> |
+| Woocommerce             | TRUE | TRUE | PHP    | <html><body><ul><li>PHP</li><ul><li>KASHA_DWH.woocommerce_orders</li><li>KASHA_DWH.woocommerce_order_line_items</li><li>KASHA_DWH.woocommerce_order_shipings</li><li>KASHA_DWH.woocommerce_order_refunds</li><li>KASHA_DWH.woocommerce_order_fees</li><li>KASHA_DWH.woocommerce_product_categories</li></ul><li>Python</li><ul><li>KASHA_DWH.python_woocommerce_orders</li><li>KASHA_DWH.python_woocommerce_order_meta_data</li><li>KASHA_DWH.python_woocommerce_order_line_items</li><li>KASHA_DWH.python_woocommerce_order_shiping_lines</li><li>KASHA_DWH.python_woocommerce_order_fee_lines</li><li>KASHA_DWH.python_woocommerce_product_categories</li></ul></ul></body></html> |
+| Tradegecko              | TRUE | TRUE | Python | <html><body><ul><li>PHP</li><ul><li>KASHA_DWH.tradegecko_orders</li><li>KASHA_DWH.tradegecko_order_line_items</li></ul><li>Python</li><ul><li>KASHA_DWH.new_tradegecko_orders</li><li>KASHA_DWH.new_tradegecko_order_line_items</li></ul></ul></body></html> |
 | ...                     |      |      |        | |
 | ...                     |      |      |        | |
 </details>
@@ -27,7 +27,9 @@ To call the woocommerce orders ETL for a specific date range, you first need to 
 # For the PHP ETL navigate to the following directory
 cd /home/ubuntu/data_warehouse/php/kasha-etl-rds
 
-# in this directory, the command `php artisan` will present you with a list of options
+# in this directory, for a list of options, type
+php artisan
+
 # to call the Woocommerce orders ETL, call
 php artisan etl:wc:orders <country> <start_date>
 # where <country> and <start_date> are parameters to specify for which country (kenya or rwanda, mandatory argument),
@@ -41,7 +43,7 @@ sudo su robot
 # and then navigate to the following directory
 cd /home/robot/data_warehouse
 
-# here you eed to activate the virtual environment
+# here you need to activate the virtual environment
 . venv/bin/activate
 
 # and then extend the python path
