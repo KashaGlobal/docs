@@ -10,12 +10,12 @@ Additionally, the table contains the names of the target columns in the data_war
 <details>
 <summary>List of all available ETLs, click to expand</summary>
 
-| **source system for the ETL** | **PHP ETL available** | **Python ETL available**  | **reporting source**  | **SQL tables**
-|-------------------------------|-----------------------|---------------------------|-----------------------|----------------|
-| Woocommerce             | TRUE | TRUE | PHP    | <html><body><ul><li>PHP</li><ul><li>KASHA_DWH.woocommerce_orders</li><li>KASHA_DWH.woocommerce_order_line_items</li><li>KASHA_DWH.woocommerce_order_shipings</li><li>KASHA_DWH.woocommerce_order_refunds</li><li>KASHA_DWH.woocommerce_order_fees</li><li>KASHA_DWH.woocommerce_product_categories</li></ul><li>Python</li><ul><li>KASHA_DWH.python_woocommerce_orders</li><li>KASHA_DWH.python_woocommerce_order_meta_data</li><li>KASHA_DWH.python_woocommerce_order_line_items</li><li>KASHA_DWH.python_woocommerce_order_shiping_lines</li><li>KASHA_DWH.python_woocommerce_order_fee_lines</li><li>KASHA_DWH.python_woocommerce_product_categories</li></ul></ul></body></html> |
-| Tradegecko              | TRUE | TRUE | Python | <html><body><ul><li>PHP</li><ul><li>KASHA_DWH.tradegecko_orders</li><li>KASHA_DWH.tradegecko_order_line_items</li></ul><li>Python</li><ul><li>KASHA_DWH.new_tradegecko_orders</li><li>KASHA_DWH.new_tradegecko_order_line_items</li></ul></ul></body></html> |
-| ...                     |      |      |        | |
-| ...                     |      |      |        | |
+| **source system for the ETL**   | **PHP ETL available** | **Python ETL available**  | **reporting source**  | **SQL tables**
+|---------------------------------|-----------------------|---------------------------|-----------------------|----------------|
+| Woocommerce             | TRUE  | TRUE | PHP    | <html><body><ul><li>PHP</li><ul><li>KASHA_DWH.woocommerce_orders</li><li>KASHA_DWH.woocommerce_order_line_items</li><li>KASHA_DWH.woocommerce_order_shipings</li><li>KASHA_DWH.woocommerce_order_refunds</li><li>KASHA_DWH.woocommerce_order_fees</li><li>KASHA_DWH.woocommerce_product_categories</li></ul><li>Python</li><ul><li>KASHA_DWH.python_woocommerce_orders</li><li>KASHA_DWH.python_woocommerce_order_meta_data</li><li>KASHA_DWH.python_woocommerce_order_line_items</li><li>KASHA_DWH.python_woocommerce_order_shiping_lines</li><li>KASHA_DWH.python_woocommerce_order_fee_lines</li><li>KASHA_DWH.python_woocommerce_order_refunds</li><li>KASHA_DWH.python_woocommerce_product_categories</li></ul></ul></body></html> |
+| Tradegecko orders       | TRUE  | TRUE | Python | <html><body><ul><li>PHP</li><ul><li>KASHA_DWH.tradegecko_orders</li><li>KASHA_DWH.tradegecko_order_line_items</li></ul><li>Python</li><ul><li>KASHA_DWH.new_tradegecko_orders</li></ul></ul></body></html> |
+| Tradegecko line_items   | FALSE | TRUE | Python | <html><body><ul><li>KASHA_DWH.new_tradegecko_order_line_items</li></ul></ul></body></html> |
+| ...                     |       |      |        | |
 </details>
 
 ### Woocommerce orders
